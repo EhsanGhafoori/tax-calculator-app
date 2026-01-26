@@ -1,0 +1,79 @@
+.about-us-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.about-us-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-content h1 {
+  color: #2d5016;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #4a7c59;
+  padding-bottom: 1rem;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  color: #4a7c59;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #4a7c59;
+  padding-left: 1rem;
+}
+
+.about-section p {
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  color: #333;
+  line-height: 2;
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-section ul li::before {
+  content: "🌿";
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 1rem;
+  }
+
+  .about-us-content {
+    padding: 1.5rem;
+  }
+
+  .about-us-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+}
