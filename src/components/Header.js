@@ -1,37 +1,49 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Box, HStack } from '@chakra-ui/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import React, { useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
+import { Box, HStack } from "@chakra-ui/react";
 
 const socials = [
   {
+    icon: faEnvelope,
+    url: "mailto: hello@example.com",
+  },
+  {
     icon: faGithub,
-    url: 'https://github.com',
+    url: "https://github.com",
   },
   {
     icon: faLinkedin,
-    url: 'https://www.linkedin.com',
+    url: "https://www.linkedin.com",
   },
   {
-    icon: faTwitter,
-    url: 'https://www.twitter.com',
+    icon: faMedium,
+    url: "https://medium.com",
+  },
+  {
+    icon: faStackOverflow,
+    url: "https://stackoverflow.com",
   },
 ];
 
 const Header = () => {
-  const [scrollDirection, setScrollDirection] = useState('up');
-  const prevScrollY = useRef(0);
-  const headerRef = useRef(null);
+  const [scrollDirection, setScrollDirection] = React.useState('up');
+  const prevScrollY = React.useRef(0);
+  const headerRef = React.useRef(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
       if (currentScrollY > prevScrollY.current) {
-        // Scrolling down
         setScrollDirection('down');
       } else {
-        // Scrolling up
         setScrollDirection('up');
       }
       
@@ -45,7 +57,7 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (headerRef.current) {
       if (scrollDirection === 'down') {
         headerRef.current.style.transform = 'translateY(-200px)';
@@ -60,8 +72,8 @@ const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -116,5 +128,4 @@ const Header = () => {
     </Box>
   );
 };
-
 export default Header;

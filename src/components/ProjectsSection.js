@@ -1,55 +1,62 @@
-import React from 'react';
-import { Box, Heading, SimpleGrid, VStack } from '@chakra-ui/react';
-import Card from './Card';
+import React from "react";
+import FullScreenSection from "./FullScreenSection";
+import { Box, Heading } from "@chakra-ui/react";
+import Card from "./Card";
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'A comprehensive e-commerce platform built with React and Redux.',
-    getImageSrc: () => 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500',
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    getImageSrc: () => require("../images/photo1.jpg"),
   },
   {
-    title: 'Project 2',
-    description: 'A social media dashboard with real-time analytics and data visualization.',
-    getImageSrc: () => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500',
+    title: "React Infinite Scroll",
+    description:
+      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+    getImageSrc: () => require("../images/photo2.jpg"),
   },
   {
-    title: 'Project 3',
-    description: 'A task management application with collaborative features and team workspaces.',
-    getImageSrc: () => 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500',
+    title: "Photo Gallery",
+    description:
+      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+    getImageSrc: () => require("../images/photo3.jpg"),
   },
   {
-    title: 'Project 4',
-    description: 'A weather application with location-based forecasts and interactive maps.',
-    getImageSrc: () => 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=500',
+    title: "Event planner",
+    description:
+      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+    getImageSrc: () => require("../images/photo4.jpg"),
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <Box
-      id="projects-section"
-      minHeight="100vh"
-      backgroundColor="#0e0e10"
-      padding={{ base: 4, md: 16 }}
-      paddingTop={{ base: 24, md: 32 }}
+    <FullScreenSection
+      backgroundColor="#14532d"
+      isDarkBackground
+      p={8}
+      alignItems="flex-start"
+      spacing={8}
     >
-      <VStack spacing={8} alignItems="stretch">
-        <Heading as="h2" size="xl" color="white" textAlign="center">
-          Featured Projects
-        </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={8}>
-          {projects.map((project, index) => (
-            <Card
-              key={index}
-              title={project.title}
-              description={project.description}
-              imageSrc={project.getImageSrc()}
-            />
-          ))}
-        </SimpleGrid>
-      </VStack>
-    </Box>
+      <Heading as="h1" id="projects-section">
+        Featured Projects
+      </Heading>
+      <Box
+        display="grid"
+        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridGap={8}
+      >
+        {projects.map((project) => (
+          <Card
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            imageSrc={project.getImageSrc()}
+          />
+        ))}
+      </Box>
+    </FullScreenSection>
   );
 };
 
