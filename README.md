@@ -1,46 +1,23 @@
-# e-plantShopping
+# Portfolio Project
 
-## Project Overview
-
-**e-plantShopping** is a dynamic e-commerce web application built with React and Redux, designed for an online plant shop called Paradise Nursery. The application allows users to browse a wide variety of houseplants, view detailed information including images, names, descriptions, and prices, add plants to a shopping cart, and manage cart items with interactive features.
+A modern, responsive portfolio website built with React, Chakra UI, Formik, and Yup.
 
 ## Features
 
-- **Landing Page**: Beautiful landing page with company branding, background image, and a "Get Started" button
-- **Product Browsing**: Browse plants organized by categories (at least 3 categories with 6+ plants each)
-- **Shopping Cart**: Add, remove, and update quantities of plants in the cart
-- **Dynamic Cart Icon**: Real-time cart count display in the navigation bar
-- **Responsive Design**: Modern, user-friendly interface with smooth interactions
+- **Header**: Social media links and smooth navigation with scroll-based hide/show animation
+- **Landing Section**: Avatar, greeting, and bio introduction
+- **Projects Section**: Grid display of featured projects with cards
+- **Contact Me Section**: Form with validation using Formik and Yup
+- **Responsive Design**: Mobile-friendly layout using Chakra UI
 
 ## Technology Stack
 
 - **React**: Frontend framework
-- **Redux Toolkit**: State management for shopping cart
-- **React Router**: Navigation between pages
-- **Vite**: Build tool and development server
-- **CSS3**: Styling and responsive design
-
-## Project Structure
-
-```
-e-plantShopping/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── AboutUs.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── ProductList.jsx
-│   │   └── CartItem.jsx
-│   ├── store/
-│   │   ├── CartSlice.jsx
-│   │   └── store.js
-│   ├── App.jsx
-│   ├── App.css
-│   └── main.jsx
-├── package.json
-└── README.md
-```
+- **Chakra UI**: Component library for styling
+- **Formik**: Form management
+- **Yup**: Form validation schema
+- **FontAwesome**: Icons
+- **Vite**: Build tool
 
 ## Getting Started
 
@@ -51,63 +28,70 @@ e-plantShopping/
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/EhsanGhafoori/e-plantShopping.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd e-plantShopping
-```
-
-3. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-4. Start the development server:
+2. Start the development server:
 ```bash
+npm start
+# or
 npm run dev
 ```
 
-5. For production build:
-```bash
-npm run build
+3. Open your browser and navigate to `http://localhost:5173` (or the port shown in terminal)
+
+## Project Structure
+
 ```
-
-6. For preview:
-```bash
-npm run preview
+portfolio-project/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── LandingSection.js
+│   │   ├── ProjectsSection.js
+│   │   ├── Card.js
+│   │   ├── ContactMeSection.js
+│   │   └── Footer.js
+│   ├── context/
+│   │   └── alertContext.jsx
+│   ├── hooks/
+│   │   └── useSubmit.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── README.md
 ```
-
-## Deployment
-
-This application can be deployed to GitHub Pages, Netlify, Vercel, or any static hosting service.
-
-### GitHub Pages Deployment
-
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to GitHub Pages
-3. Your live URL will be: `https://YOUR_USERNAME.github.io/e-plantShopping/`
 
 ## Key Components
 
-### App.jsx
-Landing page component featuring the Paradise Nursery brand, background image, company welcome message, and a "Get Started" button that navigates to the product listing page.
+### Header.js
+- Social media links (GitHub, LinkedIn, Twitter)
+- Internal navigation links (Projects, Contact Me)
+- Scroll-based hide/show animation
 
-### ProductList.jsx
-Product listing page displaying plants organized by categories. Each plant shows a thumbnail, name, description, and price with an "Add to Cart" button that disables after adding.
+### LandingSection.js
+- Avatar image
+- Greeting and bio text
 
-### CartItem.jsx
-Shopping cart page showing all cart items with quantity controls, delete functionality, total calculations, and checkout button.
+### ProjectsSection.js
+- Grid layout of project cards
+- 4 featured projects
 
-### CartSlice.jsx
-Redux slice managing cart state with three reducer functions:
-- `addItem()`: Adds a product to the cart
-- `removeItem()`: Removes a product from the cart
-- `updateQuantity()`: Updates the quantity of a cart item
+### Card.js
+- Project card with image, title, description
+- "See More" link with arrow icon
+
+### ContactMeSection.js
+- Contact form with validation
+- Name, email, enquiry type, and message fields
+- Success/error alerts
+- Form reset on successful submission
 
 ## License
 
-This project is created for educational purposes as part of a course assignment.
+This project is created for educational purposes.
