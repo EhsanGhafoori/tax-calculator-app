@@ -1,7 +1,7 @@
 {
   "name": "e-plantShopping",
   "version": "1.0.0",
-  "description": "Paradise Nursery Shopping Cart Application",
+  "description": "Paradise Nursery Shopping Cart Application - e-plantShopping",
   "type": "module",
   "scripts": {
     "dev": "vite",

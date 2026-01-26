@@ -17,6 +17,7 @@
 - **React**: Frontend framework
 - **Redux Toolkit**: State management for shopping cart
 - **React Router**: Navigation between pages
+- **Vite**: Build tool and development server
 - **CSS3**: Styling and responsive design
 
 ## Project Structure
@@ -52,7 +53,7 @@ e-plantShopping/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/e-plantShopping.git
+git clone https://github.com/EhsanGhafoori/e-plantShopping.git
 ```
 
 2. Navigate to the project directory:
@@ -70,12 +71,25 @@ npm install
 npm run dev
 ```
 
-5. For preview:
+5. For production build:
+```bash
+npm run build
+```
+
+6. For preview:
 ```bash
 npm run preview
 ```
 
-6. Open your browser and navigate to the provided port (typically `http://localhost:4173`)
+## Deployment
+
+This application can be deployed to GitHub Pages, Netlify, Vercel, or any static hosting service.
+
+### GitHub Pages Deployment
+
+1. Build the project: `npm run build`
+2. Deploy the `dist` folder to GitHub Pages
+3. Your live URL will be: `https://YOUR_USERNAME.github.io/e-plantShopping/`
 
 ## Key Components
 

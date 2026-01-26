@@ -65,7 +65,7 @@ const CartItem = () => {
     <div className="cart-container">
       <div className="cart-header">
         <h1>Shopping Cart</h1>
-        <p>{cartItems.length} {cartItems.length === 1 ? 'item' : 'items'} in your cart</p>
+        <p>Total number of plants in cart: {cartItems.reduce((total, item) => total + item.quantity, 0)}</p>
       </div>
 
       <div className="cart-content">
@@ -115,7 +115,7 @@ const CartItem = () => {
               <span>{cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
             </div>
             <div className="summary-row total">
-              <span>Total Amount:</span>
+              <span>Total Cost of All Items:</span>
               <span>${calculateTotalAmount()}</span>
             </div>
             <button className="checkout-btn" onClick={handleCheckoutShopping}>
