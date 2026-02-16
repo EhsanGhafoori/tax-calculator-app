@@ -1,0 +1,15 @@
+Run this in the project folder and paste the full output here:
+
+  docker build -t tax-calculator .
+
+Expected format:
+  Sending build context to Docker daemon...
+  Step 1/6 : FROM nginx
+  ...
+  Successfully built XXXXX
+  Successfully tagged tax-calculator:latest
+
+---
+PASTE YOUR ACTUAL TERMINAL OUTPUT BELOW:
+---
+

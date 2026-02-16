@@ -1,0 +1,11 @@
+{
+  "name": "tax-calculator-app",
+  "version": "1.0.0",
+  "description": "Tax Calculator - IBM Final Project",
+  "scripts": {
+    "test": "npx jasmine"
+  },
+  "devDependencies": {
+    "jasmine": "^5.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+Run these commands and paste the full output here:
+
+  docker run -d -p 8080:80 --name tax-calculator tax-calculator
+  docker ps
+
+Expected: A line showing tax-calculator container running on port 8080->80.
+
+---
+PASTE YOUR ACTUAL TERMINAL OUTPUT BELOW:
+---
+

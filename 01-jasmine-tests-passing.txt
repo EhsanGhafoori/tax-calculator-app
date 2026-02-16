@@ -1,0 +1,16 @@
+Run this in the project folder and paste the full output here:
+
+  npx jasmine
+
+Expected output format (7 specs, 0 failures):
+
+Randomized with seed XXXXX
+Started
+.......
+7 specs, 0 failures
+finished in 0.0XXs
+
+---
+PASTE YOUR ACTUAL TERMINAL OUTPUT BELOW (after running npx jasmine):
+---
+

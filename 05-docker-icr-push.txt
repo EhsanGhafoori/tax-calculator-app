@@ -1,0 +1,11 @@
+After tagging for IBM Cloud Container Registry and pushing, paste the terminal output here.
+
+Example commands (replace with your namespace/region):
+  ibmcloud cr login
+  docker tag tax-calculator us.icr.io/YOUR_NAMESPACE/tax-calculator:latest
+  docker push us.icr.io/YOUR_NAMESPACE/tax-calculator:latest
+
+---
+PASTE YOUR ACTUAL TERMINAL OUTPUT BELOW:
+---
+

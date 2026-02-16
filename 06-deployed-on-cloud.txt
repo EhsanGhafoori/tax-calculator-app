@@ -1,0 +1,6 @@
+After deploying the Tax Calculator on IBM Cloud (e.g. IBM Code Engine or Kubernetes), paste the terminal/output that shows the app is deployed and the URL or status.
+
+---
+PASTE YOUR ACTUAL TERMINAL OUTPUT BELOW:
+---
+
