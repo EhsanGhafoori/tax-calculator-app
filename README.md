@@ -38,8 +38,6 @@ Save terminal outputs into:
 
 After pushing this repo to GitHub, use:
 
-- **Q7:** `https://github.com/YOUR_USERNAME/tax-calculator-app/blob/main/tekton/tasks.yaml`
-- **Q8:** `https://github.com/YOUR_USERNAME/tax-calculator-app/blob/main/tekton/pipeline.yaml`
-- **Q9:** `https://github.com/YOUR_USERNAME/tax-calculator-app/blob/main/tekton/run.yaml`
-
-Replace `YOUR_USERNAME` with your GitHub username.
+- **Q7:** `https://github.com/EhsanGhafoori/tax-calculator-app/blob/main/tekton/tasks.yaml`
+- **Q8:** `https://github.com/EhsanGhafoori/tax-calculator-app/blob/main/tekton/pipeline.yaml`
+- **Q9:** `https://github.com/EhsanGhafoori/tax-calculator-app/blob/main/tekton/run.yaml`
