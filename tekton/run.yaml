@@ -8,7 +8,7 @@ spec:
     name: tax-calculator-pipeline
   params:
     - name: repo-url
-      value: "https://github.com/YOUR_USERNAME/tax-calculator-app"
+      value: "https://github.com/EhsanGhafoori/tax-calculator-app"
   workspaces:
     - name: source
       persistentVolumeClaim:
